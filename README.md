@@ -1,7 +1,8 @@
 The final rendering
 ----
 ![The final rendering](https://github.com/suwu150/static-resource/blob/master/images/react-native-custome-button.gif?raw=true)
-![The final rendering-image](https://github.com/suwu150/static-resource/blob/master/images/react-native-custome-button-image.gif?raw=true)
+![The final rendering-image](https://github.com/suwu150/static-resource/blob/master/images/react-native-custome-button-image.gif?raw=true)          
+
 Description: 
 --------------------------------------    
 A custom button component that should render nicely on any platform. Supports a minimal level of customization.     
