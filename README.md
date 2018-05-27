@@ -41,7 +41,7 @@ Props:
 |style|button style,The style used to modify the button|object|no|{ backgroundColor: '#43CCFF',height: 30,width: 100,}|     
 |textStyle|The style of the text in the button|object|no|{fontSize: 15, color: '#000000'}|      
 
-for example for props:
+Examples from props:
 ```javascript
 render() {
     return (
