@@ -7,6 +7,7 @@ import {
   Text,
   View,
   StyleSheet,
+  Image
 } from 'react-native';
 
 const NoDoublePress = {
@@ -38,6 +39,11 @@ const styles = StyleSheet.create({
   defaultTextStyle: {
     fontSize: 15,
     color: '#000000'
+  },
+  defaultRowContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 });
 
@@ -54,7 +60,7 @@ class RNButton extends Component {
   };
 
   static defaultProps = {
-    title: '确定',
+    title: 'ok',
   };
 
   onPress = (e) => {
@@ -64,11 +70,10 @@ class RNButton extends Component {
   };
 
   renderIcon = () => {
-    if (typeof this.props.icon === 'function') {
-      return this.props.icon();
-    }
-
-    return this.props.icon;
+    const { icon, iconStyle = {} } = this.props;
+    return (
+      <Image source={icon} style={iconStyle} />
+    );
   };
 
   render() {
@@ -81,12 +86,14 @@ class RNButton extends Component {
             onPress={this.onPress}
             underlayColor={this.props.underlayColor}
           >
-            {/*{this.renderIcon()}*/}
-            <Text
-              style={[styles.defaultTextStyle, this.props.textStyle]}
-            >
-              {this.props.title}
-            </Text>
+            <View style={styles.defaultRowContainer}>
+              {this.renderIcon()}
+              <Text
+                style={[styles.defaultTextStyle, this.props.textStyle]}
+              >
+                {this.props.title}
+              </Text>
+            </View>
           </TouchableHighlight>
         </View>
       );
@@ -98,12 +105,14 @@ class RNButton extends Component {
           style={[styles.defaultTouchStyle]}
           onPress={this.onPress}
         >
-          {/*{this.renderIcon()}*/}
-          <Text
-            style={[styles.defaultTextStyle, this.props.textStyle]}
-          >
-            {this.props.title}
-          </Text>
+          <View style={styles.defaultRowContainer}>
+            {this.renderIcon()}
+            <Text
+              style={[styles.defaultTextStyle, this.props.textStyle]}
+            >
+              {this.props.title}
+            </Text>
+          </View>
         </TouchableOpacity>
       </View>
 
