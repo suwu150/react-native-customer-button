@@ -1,0 +1,24 @@
+{
+  "name": "react-native-customer-button",
+  "version": "0.0.2",
+  "description": "'react-native-customer-button'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suwu150/react-native-customer-button.git"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "component"
+  ],
+  "author": "jkwu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suwu150/react-native-customer-button/issues"
+  },
+  "homepage": "https://github.com/suwu150/react-native-customer-button#readme"
+}
