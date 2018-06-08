@@ -10,14 +10,14 @@ A custom button component that should render nicely on any platform. Supports a 
 Installation:  
 -------------------------------------- 
 ```
- npm install --save react-native-custom-button
+ npm install --save react-native-customer-button
 ```
 Example usage: 
 --------------------------------------- 
 1.basic     
 
 ```
-import Button from 'react-native-custom-button';
+import Button from 'react-native-customer-button';
    ...
    _onPress = () => {
      console.log('onPress');
