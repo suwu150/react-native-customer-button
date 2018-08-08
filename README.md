@@ -1,7 +1,6 @@
 The final rendering
 ----
-![The final rendering](https://github.com/suwu150/static-resource/blob/master/images/react-native-custome-button.gif?raw=true)
-![The final rendering-image](https://github.com/suwu150/static-resource/blob/master/images/react-native-custome-button-image.gif?raw=true)          
+![The final rendering-image](https://github.com/suwu150/react-native-customer-button/blob/master/react-native-custome-button-image.gif?raw=true)          
 
 Description: 
 --------------------------------------    
